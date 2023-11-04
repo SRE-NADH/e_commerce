@@ -34,8 +34,9 @@ useEffect(()=>{
 
 
     return( 
-        <div>
+        <div className="home">
            <Navbar/>
+           <h1 style={{textAlign:"center",margin:"10px"}}>All Items</h1>
            <div className="container">
             {Products.length>0 && Products.map((item,index)=>(
                     <Product dispatch={dispatch} state={state} key={index} type={"Add To Cart"} data={item} />

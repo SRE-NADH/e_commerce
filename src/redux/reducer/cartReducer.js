@@ -23,7 +23,7 @@ const cartReducer = (state=initialState,action)=>{
     case REMOVE:  {
         let arr = state.arr;
         let total = state.total;
-        let newArr = arr.filter(item => item.id != action.Item.id);
+        let newArr = arr.filter(item => item.id !== action.Item.id);
         return {
             arr:newArr,
             total:total-action.Item.price

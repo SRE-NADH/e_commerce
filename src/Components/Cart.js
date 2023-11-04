@@ -23,7 +23,7 @@ return (
             <p id="heading">Checkout List</p>
 
             {state.arr.length>0 && state.arr.map((item,index)=>(
-                  <div key={index} className="div"><p>1.{item.title}</p>
+                  <div key={index} className="div"><p>1. {item.title}</p>
                   <p>${item.price}</p></div>
             ))}
 
